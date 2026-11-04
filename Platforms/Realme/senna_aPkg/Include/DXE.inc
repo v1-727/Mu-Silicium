@@ -34,6 +34,10 @@
   INF Binaries/senna_a/QcomPkg/Drivers/PmicDxe/PmicDxeLa.inf
 
   INF MdeModulePkg/Universal/DevicePathDxe/DevicePathDxe.inf
+  INF UniXNUPkg/Driver/UniXNURamDiskDxe/UniXNURamDiskDxe.inf
+  # The XNU loader is part of the firmware: a driver loaded from a volume is
+  # refused by the image verification of this build.
+  INF DarwinBootPkg/Driver/DarwinBoot.inf
 
   INF Binaries/senna_a/MdeModulePkg/Universal/Disk/DiskIoDxe/DiskIoDxe.inf
   INF Binaries/senna_a/MdeModulePkg/Universal/Disk/PartitionDxe/PartitionDxe.inf
